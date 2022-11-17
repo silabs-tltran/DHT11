@@ -135,7 +135,7 @@ void DHT_Init(DHT_Name_t* dht, TIM_HandleTypeDef* htimer, GPIO_TypeDef* dht_port
 {
     dht->port = dht_port;
     dht->pin = dht_pin;
-    dht->timer = htimer;
+    dht->htimer = htimer;
     DHT_DelayInit(dht);
 }
 

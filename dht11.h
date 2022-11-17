@@ -22,11 +22,11 @@
 #define DHT11_STARTTIME 18000
 typedef struct
 {
-    TIM_HandleTypeDef* timer;
+    TIM_HandleTypeDef* htimer;
     uint16_t pin;
     GPIO_TypeDef* port;
     float temp;
-    float humi;
+    float humid;
 } DHT_Name_t;
 
 void DHT_Init(DHT_Name_t* dht, TIM_HandleTypeDef* htimer, GPIO_TypeDef* dht_port, uint16_t dht_pin);
